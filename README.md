@@ -51,6 +51,7 @@ curl localhost
 1. Navigate to the Web Root Directory:
    
 ```bash
+
  cd /var/www/html/
  
 2.Create a Simple "Hello World" HTML Page:
