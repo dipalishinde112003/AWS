@@ -29,10 +29,7 @@ echo "Hello World">var/www/html/index.html
 
 **Access the Deployed "Hello World" App**
 
--Get the Public DNS (IPv4) of the Instance.
-
--Open a Web Browser.
-
--Enter the Public DNS Address of your EC2 instance.
-
--View the "Hello World" Page:
+- Get the Public DNS (IPv4) of the Instance.
+- Open a Web Browser.
+- Enter the Public DNS Address of your EC2 instance.
+- View the "Hello World" Page:
