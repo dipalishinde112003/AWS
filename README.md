@@ -35,18 +35,23 @@
    sudo apt update
 
 Install NGINX:
+  ```bash
 sudo apt install nginx
 
 Check the Status of NGINX:
+  ```bash
 sudo service nginx status
 
 Verify NGINX Installation:
+  ```bash
 curl localhost
 
 ### 4.Deploy "Hello World" App
 1. Navigate to the Web Root Directory:
+  ```bash
       cd /var/www/html/
 2.Create a Simple "Hello World" HTML Page:
+  ```bash
       echo "Hello World" | sudo tee index.html
 3.Access the Web Page:
 
