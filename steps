@@ -1,0 +1,81 @@
+Title: Install NGINX on EC2 and Deploy a "Hello World" App
+Prerequisites
+
+    AWS account
+    AWS CLI installed and configured
+    Key pair created in AWS for SSH access to the EC2 instance
+    Security group with appropriate rules to allow SSH (port 22) and HTTP (port 80) access
+Step-by-Step Guide
+A. Create an EC2 Instance
+
+    1.Log in to the AWS Management Console.
+
+    2.Navigate to the EC2 Dashboard:
+        Click on Services at the top left and select EC2 under the Compute section.
+3.Launch a New Instance:
+
+    Click on the Launch Instance button.
+
+4.Choose an Amazon Machine Image (AMI):
+
+    Select an AMI, such as Amazon Linux 2 AMI (HVM), SSD Volume Type.
+
+5.Choose an Instance Type:
+
+    Select an instance type, such as t2.micro (eligible for the free tier).
+6.Configure Instance Details:
+
+    Leave the default settings and click Next: Add Storage.
+
+7.Add Storage:
+
+    Leave the default settings and click Next: Add Tags.
+8.Configure Security Group:
+
+    Create a new security group with the following rules:
+        Type: SSH, Protocol: TCP, Port Range: 22, Source: My IP
+        Type: HTTP, Protocol: TCP, Port Range: 80, Source: 0.0.0.0/0
+    Click Review and Launch
+9.Review and Launch:
+
+    Click Launch.
+    Select an existing key pair or create a new key pair, then acknowledge that you have access to the selected key pair.
+    Click Launch Instances.
+10.View Instances:
+
+    Click on View Instances to see the status of your instance.
+    Wait until the instance state changes to running.
+B.Connect to the EC2 Instance
+
+    1.Get the Public DNS (IPv4) of the Instance:
+        In the EC2 Dashboard, select your instance.
+        Note the Public DNS (IPv4) address.
+2.Connect to the Instance 
+C.Install NGINX
+1.Update the Package List:
+sudo apt update
+    This command updates the list of available packages and their versions.
+2.Install NGINX:
+sudo apt install nginx
+    This command installs the NGINX web server package.
+
+3.Check the Status of NGINX:
+sudo service nginx status
+    This command checks the status of the NGINX service to ensure it is running.
+
+4.Verify NGINX Installation:
+curl localhost
+    This command sends a request to the NGINX server running on the local machine. You should see the default NGINX welcome page HTML in the output.
+D. Deploy "Hello World" App
+
+    1.Navigate to the Web Root Directory:
+cd /var/www/html/
+2.Create a Simple "Hello World" HTML Page:
+echo "Hello World" | sudo tee index.html
+    This command creates a new index.html file with the content "Hello World".
+3.Access the Web Page:
+
+    >Open a web browser.
+    >Enter the Public DNS address of your EC2 instance.
+    >You should see the "Hello World" message displayed on the page.
+
