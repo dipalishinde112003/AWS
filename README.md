@@ -34,15 +34,15 @@
 
    sudo apt update
 
-**Install NGINX:**
+2.**Install NGINX:**
  
 sudo apt install nginx
 
-**Check the Status of NGINX:**
+3.**Check the Status of NGINX:**
   
 sudo service nginx status
 
-**Verify NGINX Installation:**
+4.**Verify NGINX Installation:**
 
 curl localhost
 
