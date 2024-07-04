@@ -15,7 +15,7 @@
 You can automate the setup process by providing a script as user data when launching the EC2 instance. This script will run during the instance's initial boot cycle and handle the installation of NGINX and deployment of a "Hello World" app.
 
 #### User Data Script
-When launching a new EC2 instance, you can provide the following script in the User Data field:
+- When launching a new EC2 instance, you can provide the following script in the User Data field:
 
 
 #!/bin/bash
