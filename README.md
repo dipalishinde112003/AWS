@@ -47,12 +47,15 @@ sudo service nginx status
 curl localhost
 
 ### 4.Deploy "Hello World" App
-1. Navigate to the Web Root Directory:
 
-  cd /var/www/html/
+1. Navigate to the Web Root Directory:
+   
+ cd /var/www/html/
+ 
 2.Create a Simple "Hello World" HTML Page:
   
   echo "Hello World" | sudo tee index.html
+  
 3.Access the Web Page:
 
     Open a web browser.
