@@ -48,18 +48,18 @@ curl localhost
 
 ### 4.Deploy "Hello World" App
 
-1. Navigate to the Web Root Directory:
-   
-```bash
+**1. Navigate to the Web Root Directory:**
 
  cd /var/www/html/
  
-2.Create a Simple "Hello World" HTML Page:
+**2.Create a Simple "Hello World" HTML Page:**
   
   echo "Hello World" | sudo tee index.html
   
-3.Access the Web Page:
+**3.Access the Web Page:**
 
-    Open a web browser.
-    Enter the Public DNS address of your EC2 instance.
-    You should see the "Hello World" message displayed on the page.
+   - Open a web browser.
+     
+   - Enter the Public DNS address of your EC2 instance.
+     
+   - You should see the "Hello World" message displayed on the page.
