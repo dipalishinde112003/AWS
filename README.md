@@ -49,10 +49,10 @@ curl localhost
 ### 4.Deploy "Hello World" App
 1. Navigate to the Web Root Directory:
   ```bash
-      cd /var/www/html/
+  cd /var/www/html/
 2.Create a Simple "Hello World" HTML Page:
   ```bash
-      echo "Hello World" | sudo tee index.html
+  echo "Hello World" | sudo tee index.html
 3.Access the Web Page:
 
     Open a web browser.
