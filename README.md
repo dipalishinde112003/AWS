@@ -34,15 +34,15 @@
    ```bash
    sudo apt update
 
-Install NGINX:
+**Install NGINX:**
   ```bash
 sudo apt install nginx
 
-Check the Status of NGINX:
+**Check the Status of NGINX:**
   ```bash
 sudo service nginx status
 
-Verify NGINX Installation:
+**Verify NGINX Installation:**
   ```bash
 curl localhost
 
