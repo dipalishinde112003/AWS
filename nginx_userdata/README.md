@@ -20,7 +20,9 @@ When launching a new EC2 instance, you can provide the following script in the U
 
 #!/bin/bash
 sudo apt update
+
 sudo apt install -y nginx
+
 echo "Hello World">var/www/html/index.html
 
 **Review and Launch. Click Launch**
