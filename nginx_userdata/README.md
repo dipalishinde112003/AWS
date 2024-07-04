@@ -17,15 +17,15 @@ You can automate the setup process by providing a script as user data when launc
 #### User Data Script
 When launching a new EC2 instance, you can provide the following script in the User Data field:
 
-```bash
+
 #!/bin/bash
 sudo apt update
 sudo apt install -y nginx
 echo "Hello World">var/www/html/index.html
 
-Review and Launch. Click Launch
+**Review and Launch. Click Launch**
 
-Access the Deployed "Hello World" App
+**Access the Deployed "Hello World" App**
 -Get the Public DNS (IPv4) of the Instance.
 -Open a Web Browser.
 -Enter the Public DNS Address of your EC2 instance.
