@@ -41,6 +41,7 @@ This guide outlines the steps to create and manage block storage volumes in diff
 
 - In volume option now total 4 volumes are available 3 in ap-south-a and 1 in ap-south-b
 - Run the lsblk command to list the block devices:
+  
   lsblk
 ### 4. Attempt to Attach Volume from AP South B to Instance in AP South A (Expected to Fail)
 
