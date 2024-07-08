@@ -44,20 +44,20 @@ This guide outlines the steps to create and manage block storage volumes in diff
   lsblk
 ### 4. Attempt to Attach Volume from AP South B to Instance in AP South A (Expected to Fail)
 
-    In the AWS Management Console, navigate to the "Volumes" section.
-    Select the volume in ap-south-1b.
-    Click "Actions" and select "Attach Volume."
-    Attempt to attach it to the instance in ap-south-1a (this should fail due to different AZs).
+   - In the AWS Management Console, navigate to the "Volumes" section.
+   - Select the volume in ap-south-1b.
+   - Click "Actions" and select "Attach Volume."
+   - Attempt to attach it to the instance in ap-south-1a (this should fail due to different AZs).
 
 ### 5. Attach Volume from AP South A to Instance in AP South A (Expected to Succeed)
 
-    In the AWS Management Console, navigate to the "Volumes" section.
-    Select the volume in ap-south-1a.
-    Click "Actions" and select "Attach Volume."
-    Select your instance from the dropdown menu and attach the volume.
+   - In the AWS Management Console, navigate to the "Volumes" section.
+   - Select the volume in ap-south-1a.
+   - Click "Actions" and select "Attach Volume."
+   - Select your instance from the dropdown menu and attach the volume.
 
 ### 6. Detach the Volume from the Instance
 
-    In the AWS Management Console, navigate to the "Volumes" section.
-    Select the attached volume in ap-south-1a.
-    Click "Actions" and select "Detach Volume."
+   - In the AWS Management Console, navigate to the "Volumes" section.
+   - Select the attached volume in ap-south-1a.
+   - Click "Actions" and select "Detach Volume."
